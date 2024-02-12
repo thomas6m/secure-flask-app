@@ -5,7 +5,7 @@ openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt\
 ####################################\
 podman build -t secure-flask-app .\
 podman run -d -p 443:443  secure-flask-app\
-###################   Validation \
+###################   Validation ###\
 https://localhost/secure\
 http://localhost/secure\
 ####################################\
